@@ -1,0 +1,72 @@
+:root {
+  --color-primary: #fff3cdf5; /* Fondo, navarbar y footer */
+  --color-secundary: rgb(143, 130, 84);
+  --color-fondo-claro: rgba(195, 154, 154, 0.074);
+  --color-button-registro: #5f7858; /* Botón registro y ver perfil */
+  --color-button-borrar: #f9a76a;
+  --color-button-cancelar: #e55f60;
+  --color-button-volver: #5fb6e5;
+  --color-sombra-naranja: #f9a76a;
+  --border-button: solid transparent;
+  --padding-button: 10px 20px;
+  --color-letra-button: rgb(255, 255, 255);
+  --border-radius-button: 10px;
+  --menssage-err: red;
+}
+.navbar {
+  font-size: 120%;
+  background-color: var(--color-primary);
+  .img-logo {
+    height: 50px;
+  }
+  .bg-href {
+    border: 2px solid var(--color-secundary);
+    border-radius: 15px;
+  }
+  @media (width <= 600px) {
+    .bg-href {
+      text-align: center;
+      width: 130px;
+    }
+  }
+  @media (width <= 1000px) {
+    .bg-href {
+      text-align: center;
+      width: 130px;
+    }
+  }
+}
+
+footer {
+  background-color: var(--color-primary);
+
+  img {
+    height: 250px;
+  }
+
+  @media (width <= 600px) {
+    .section-footer {
+      padding: 2rem;
+
+      img {
+        height: 0;
+      }
+      text-align: center;
+    }
+  }
+}
+
+@media (width <= 1000px) {
+  .section-footer {
+    padding: 1rem;
+    img {
+      height: 0;
+    }
+    text-align: center;
+  }
+}
+
+
+.img-logo:hover{
+  transform: scale(1.05);
+}

@@ -1,0 +1,136 @@
+<nav class="navbar fixed-top navbar-expand-lg px-3">
+  <div class="container-fluid">
+    <div class="navbar-brand">
+      <a href="/">
+        <img
+          class="img-logo"
+          src="/images/generales/logo1.png"
+          alt=""
+        >
+      </a>
+    </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      id="navbarNavDropdown"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="/"
+          >Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="/#about"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Sobre Nosotros
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a
+                class="dropdown-item"
+                href="/#about"
+              >Descripción</a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/#objetivos"
+              >Objetivos</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="dropdown-item"
+                href="/#listfoodies"
+              >Perfil foodies</a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/#footer"
+              >¿Necesitas ayuda?</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="/dish/addDishByFoodie"
+          >Añade tus platos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Filtrar platos
+          </a>
+          <ul class="dropdown-menu">
+               <li>
+              <a
+                class="dropdown-item"
+                href="/dish/allDish"
+              >Todos los platos</a>
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/dish/dishOrderScoreAsc"
+              >Por puntuación (menor a mayor)</a>
+            </li>
+              <li>
+              <a
+                class="dropdown-item"
+                href="/dish/dishOrderScoreDesc"
+              >Por puntuación (mayor a menor)</a>
+            </li>
+            <li><a
+                class="dropdown-item"
+                href="/dish/dishOrderScoreAsc"
+              >Por nombre de ciudad (ascendente)</a>
+            </li>
+              <li><a
+                class="dropdown-item"
+                href="/dish/dishOrderNameDesc"
+              >Por nombre de ciudad (descendente)</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto gap-3 px-2">
+        <li class="nav-item">
+          <a
+            class="bg-href nav-link"
+            href="/foodies/formLogin"
+          >Indentifícate</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="bg-href nav-link "
+            href="/foodies/formfoodies"
+          >Regístrate</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

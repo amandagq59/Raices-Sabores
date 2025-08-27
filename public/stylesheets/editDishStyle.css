@@ -1,0 +1,43 @@
+.section-editDish {
+  padding-block: 7rem;
+  background-color: var(--color-fondo-claro);
+
+  @media (width <= 600px) {
+    background-color: white;
+    width: 80%;
+  }
+}
+
+form {
+  background-color: white;
+  border: 2px solid #5f7858;
+  border-radius: 2rem;
+  padding: 3rem 7rem;
+  box-shadow: 0 0 5px #5f7858;
+  font-size: 18px;
+
+  @media (width <= 1000px) {
+    font-size: 20px;
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 30rem;
+  }
+
+  .button-registro,
+  .button-cancelar {
+    border-radius: var(--border-radius-button);
+    border: var(--border-button);
+    color: var(--color-letra-button);
+  }
+  .button-registro {
+    background-color: var(--color-button-registro);
+  }
+  .button-cancelar {
+    background-color: var(--color-button-volver);
+  }
+}

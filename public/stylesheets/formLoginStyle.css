@@ -1,0 +1,96 @@
+.section-login {
+  background-image: url('/images/generales/piñas.png');
+  background-position: center;
+  background-size: contain;
+  background-color: rgba(96, 133, 67, 0.413);
+  padding-block: 5rem;
+
+  @media (width <= 600px) {
+    padding-block: 1rem;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @media (width <= 1000px) {
+    padding-block: 10rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .message-err {
+    color: var(--menssage-err);
+  }
+
+  .palabra {
+    position: absolute;
+    font-size: 40px;
+    opacity: 0;
+    animation: moverabajo 4s forwards;
+    color: #5f7858;
+    @media (width <= 600px) {
+      animation: none;
+    }
+     @media (width <= 1000px) {
+      animation: none;
+    }
+  }
+
+  form {
+    border: 2px solid #5f7858;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 5px rgb(187, 187, 44);
+    font-size: 18px;
+
+    @media (width <= 600px) {
+      margin: 0;
+      width: 95%;
+    }
+
+    input[type='text'],
+    input[type='email'] {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+    }
+    .button-registro,
+    .button-borrar,
+    .button-cancelar {
+      border: var(--border-button);
+      border-radius: var(--border-radius-button);
+      padding: var(--padding-button);
+      color: var(--color-letra-button);
+    }
+    .button-registro {
+      background-color: var(--color-button-registro);
+    }
+    .button-borrar {
+      background-color: var(--color-button-borrar);
+    }
+    .button-cancelar {
+      background-color: var(--color-button-cancelar);
+    }
+  }
+
+  @media (width <= 600px) {
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+@keyframes moverabajo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}

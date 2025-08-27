@@ -1,0 +1,81 @@
+.section-profileFoodie {
+  background-image: url('/images/generales/cubiertos.png');
+  background-position: left;
+  background-size: auto;
+  background-repeat: repeat-y;
+  padding-block: 7rem;
+  @media (width <= 600px) {
+    background-image: none;
+  }
+
+  @media (width <= 1000px) {
+    background-repeat: no-repeat;
+    background-position-y: top;
+    margin-top: 90px;
+    font-size: 20px;
+  }
+
+  img {
+    height: 500px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin-block: 2rem;
+
+    @media (width <= 600px) {
+      height: 350px;
+    }
+  }
+}
+
+.section-profileFoodie,
+.section-dish {
+  button {
+    border: var(--border-button);
+    border-radius: var(--border-radius-button);
+    padding: var(--padding-button);
+    color: var(--color-letra-button);
+
+    @media (width <= 600px) {
+      margin: 0.2rem;
+    }
+  }
+  .button-editar {
+    background-color: var(--color-button-registro);
+  }
+  .button-eliminadologico {
+    background-color: var(--color-button-borrar);
+  }
+  .button-eliminar {
+    background-color: var(--color-button-cancelar);
+  }
+  .button-volver {
+    background-color: var(--color-button-volver);
+  }
+}
+
+.section-dish {
+  background-image: url('/images/generales/cubiertos2.png');
+  background-position: right;
+  background-size: auto;
+  background-repeat: repeat-y;
+  padding-block: 7rem;
+
+  @media (width <= 600px) {
+    background-image: none;
+    padding-block: 4rem;
+  }
+
+  @media (width <= 1000px) {
+    background-image: none;
+    background-repeat: no-repeat;
+    padding-block: 1rem;
+    font-size: 20px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  .col {
+    margin-left: 4rem;
+  }
+}

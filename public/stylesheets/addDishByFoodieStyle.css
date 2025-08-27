@@ -1,0 +1,55 @@
+.section-formdish {
+  background-image: url('/images/generales/fondo5.png');
+  background-position: center;
+  background-repeat: repeat;
+  padding-block: 7rem;
+
+  form {
+    background-color: white;
+    border: 2px solid #5f7858;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 5px #5f7858;
+    font-size: 18px;
+    
+     @media (width <= 600px) {
+     width: 90%;
+     }
+
+      @media (width <= 1000px) {
+     font-size: 20px;
+     }
+   
+    input[type='text'],
+    input[type='email'] {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+    }
+    .message-err {
+      color: var(--message-err);
+    }
+
+    .icono-img {
+      height: 50px;
+      margin-left: 0.5rem;
+    }
+
+    .button-registro,
+    .button-borrar,
+    .button-cancelar {
+      border-radius: var(--border-radius-button);
+      border: var(--border-button);
+      color: var(--color-letra-button);
+    }
+    .button-registro {
+      background-color: var(--color-button-registro);
+    }
+    .button-borrar {
+      background-color: var(--color-button-borrar);
+    }
+    .button-cancelar {
+      background-color: var(--color-button-cancelar);
+    }
+  }
+}

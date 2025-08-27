@@ -1,0 +1,46 @@
+.section-profileDish {
+  background-image: url('/images/generales/cubiertos.png');
+  background-position: left;
+  background-size: auto;
+  background-repeat: repeat-y;
+  padding-block: 7rem;
+
+  @media (width <= 600px) {
+    background-image: none;
+  }
+
+  @media (width <= 1000px) {
+    background-image: none;
+    font-size: 20px;
+  }
+
+  img {
+    height: 500px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin-block: 2rem;
+  }
+
+  button {
+    border: var(--border-button);
+    border-radius: var(--border-radius-button);
+    padding: var(--padding-button);
+    color: var(--color-letra-button);
+  }
+  .button-editar {
+    background-color: var(--color-button-registro);
+  }
+  .button-eliminadologico {
+    background-color: var(--color-button-borrar);
+  }
+  .button-eliminar {
+    background-color: var(--color-button-cancelar);
+
+    @media (width <= 600px) {
+      margin-top: 0.5rem;
+    }
+  }
+  .button-volver {
+    background-color: var(--color-button-volver);
+  }
+}

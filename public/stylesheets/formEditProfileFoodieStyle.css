@@ -1,0 +1,81 @@
+.section-formRegister {
+  padding-block: 7rem;
+  background-color: var(--color-fondo-claro);
+
+  @media (width <= 600px) {
+    background-color: transparent;
+  }
+
+  form {
+    border: 2px solid var(--color-naranja-claro);
+    border-radius: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 5px var(--color-naranja-claro);
+    font-size: 18px;
+    background-color: white;
+
+    @media (width <= 600px) {
+      width: 100%;
+      transform: translateX(-60px);
+    }
+
+    @media (width <= 1000px) {
+      font-size: 25px;
+      padding: 5rem;
+    }
+
+    @media (width <= 600px) {
+      h1 {
+        font-size: 30px;
+        margin-bottom: 2rem;
+      }
+    }
+
+    input[type='text'] {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+
+      @media (width <= 600px) {
+        width: 350px;
+        padding-block: 0;
+      }
+    }
+
+    @media (width <= 600px) {
+      textarea {
+        width: 350px;
+      }
+    }
+    .message-err {
+      color: var(--message-err);
+    }
+
+    .icono-img {
+      height: 50px;
+      margin-left: 0.5rem;
+    }
+    .button-editar,
+    .button-borrar,
+    .button-cancelar {
+      border: var(--border-button);
+      border-radius: var(--border-radius-button);
+      padding: var(--padding-button);
+      color: var(--color-letra-button);
+
+      @media (width <= 600px) {
+        padding-block: 0.5rem;
+        padding-inline: 0.5rem;
+      }
+    }
+    .button-editar {
+      background-color: var(--color-button-registro);
+    }
+    .button-borrar {
+      background-color: var(--color-button-borrar);
+    }
+    .button-cancelar {
+      background-color: var(--color-button-cancelar);
+    }
+  }
+}
