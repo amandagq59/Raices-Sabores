@@ -7,7 +7,7 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const foodiesRouter = require('./routes/foodies');
 const dishRouter = require('./routes/dish');
-
+console.log('Hola Caracola');
 const app = express();
 
 // view engine setup
