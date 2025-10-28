@@ -181,14 +181,14 @@ class DishControllers {
  //8)Ordena platos por nombre de descendente ascendente
   dishOrderNameAsc = (req, res) => {
     const { dish_restaurant_city } = req.params;
-    let sql = 'SELECT * FROM dish ORDER BY dish_restaurant_city ASC';
+    let sql = 'SELECT * FROM dish ORDER BY dish_restaurant_city Asc';
     let values = { dish_restaurant_city };
 
     connection.query(sql, values, (err, result) => {
       if (err) {
         throw err;
       } else {
-        res.render('dishOrderNameAsc', { result });
+        res.render('dishOrderNameAsc', { dishName: result });
       }
     });
   };

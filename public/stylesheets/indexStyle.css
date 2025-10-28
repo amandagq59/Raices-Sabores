@@ -105,6 +105,6 @@
 }
 
 
-.card:hover{
+button:hover{
   transform: scale(0.9);
 }
